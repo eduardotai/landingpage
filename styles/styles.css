@@ -11,7 +11,7 @@ body {
 }
 
 .container1 {
-    padding: 130px 90px 130px;  /* Alterado aqui */
+    padding: 130px 90px 130px;
     background-color: #1f2937;
 }
 
@@ -20,20 +20,18 @@ body {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    padding: 0 90px 90px;  /* Alterado aqui */
+    padding: 0 90px 90px;
     background-color: white;
 }
 
 .container3 {
     background-color: #e5e7eb;
-    padding: 0 90px 90px;  /* Alterado aqui */
-
+    padding: 0 90px 90px;
 }
 
 .container4 {
     background-color: white;
-    padding: 130px 90px 90px;  /* Alterado aqui */
-
+    padding: 130px 90px 90px;
 }
 
 footer {
@@ -72,7 +70,6 @@ strong {
     color: white;
     align-items: center;
     flex-direction: row;
-    margin-left: 100px;
     gap: 170px;
 }
 
@@ -121,19 +118,19 @@ table {
     height: 100%;
     border-spacing: 0px;
     margin-left: 90px;
-    border-collapse:separate;
+    border-collapse: separate;
 }
 
 .textContent2 {
     font-size: 40px;
     text-align: center;
-    margin-left: 0;  /* Alterado aqui */
+    margin-left: 0;
     width: 100%;
     margin-bottom: 20px;
 }
 
 .content3 h3 {
-    color: balck;
+    color: black;
     text-align: right;
     margin-right: 60px;
 }
@@ -162,16 +159,15 @@ table {
 .content4 span {
     position: absolute;
     top: 50%;
-    right: 30px;  /* Adicionado para alinhar horizontalmente com os parágrafos */
-    transform: translateY(-50%); /* Corrigido aqui */
+    right: 30px;
+    transform: translateY(-50%);
 }
 
 .content4 p {
     top: 50%;
-    left: 100px;  /* Adicionado para alinhar horizontalmente com os parágrafos */
-    transform: translateY(-50%); /* Corrigido aqui */
+    left: 100px;
+    transform: translateY(-50%);
     font-size: 25px;
-
 }
 
 .signUp2 {
@@ -189,55 +185,42 @@ footer {
     color: white;
     justify-content: center;
     align-items: center;
- }
-
- @media screen and (max-width: 1200px) {
-    .content, .imgcontent {
-        flex-direction: column;
-        align-items: center;
-    }
-    .tdImg {
-        width: 80%;
-    }
-    .content4, .container4 {
-        padding: 60px 30px;
-    }
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
 }
+
+/* Media Queries */
 
 @media screen and (max-width: 768px) {
-    .container1, .container2, .container3 {
-        padding: 60px 20px;
-    }
-    .tdImg {
-        width: 90%;
-        padding: 15px;
-    }
-    .content4 span {
-        right: 20px;
-    }
-    ul {
+    .container1, .container2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
-        gap: 15px;
+        min-height: 100vh;
     }
 }
 
-@media screen and (max-width: 480px) {
-    body {
-        font-size: 14px; /* Reduzir tamanho da fonte */
-    }
-    .content4, .container4 {
-        padding: 30px 15px;
-    }
-    strong {
-        font-size: 24px; /* Reduzir tamanho da fonte */
-    }
-    .textContent2 {
-        font-size: 32px; /* Reduzir tamanho da fonte */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container1, .container2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
     }
 }
 
+@media screen and (min-width: 1025px) {
+    .content, .content2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        height: 30vh;
+        margin: 0 auto;  /* Center aligned */
+    }
 
+    table {
+        margin: 40px auto 0 auto;  /* Adds top margin and centers the table */
+    }
+}

@@ -142,6 +142,8 @@ table {
     color: #1f2937;
     font-weight: 100;
     font-size: 30px;
+    top: 50%;
+    transform: translateY(50%);
 }
 
 .content4 {
@@ -152,14 +154,43 @@ table {
     padding-top: 60px;
     width: 100%;
     flex-direction: column;   
+    position: relative;
+    top: 50%;
+    transform: translateY(-20%);
+}
+
+.content4 span {
+    position: absolute;
+    top: 50%;
+    right: 30px;  /* Adicionado para alinhar horizontalmente com os parágrafos */
+    transform: translateY(-50%); /* Corrigido aqui */
+}
+
+.content4 p {
+    top: 50%;
+    left: 100px;  /* Adicionado para alinhar horizontalmente com os parágrafos */
+    transform: translateY(-50%); /* Corrigido aqui */
+    font-size: 25px;
 
 }
 
-span {
+.signUp2 {
+    border-radius: 7px;
+    color: #3882f6;
+    background-color: white;
+    font-size: 14px;
+    border: 2px solid white;    
+    padding: 12px;
+    width: 100px;
+}
+
+footer {
     display: flex;
-    justify-content: right;
-}
+    color: white;
+    justify-content: center;
+    align-items: center;
+ }
 
-.signUp2{
-}
+
+
 
